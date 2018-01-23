@@ -7,7 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('movies');
+  this.route('users');
+  this.route('blogs');
 });
 
 export default Router;
