@@ -4,6 +4,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'ember-node-mission',
+    podModulePrefix: 'ember-node-mission/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',
