@@ -8,5 +8,6 @@ export default DS.Model.extend({
     return `${this.get('firstName')} ${this.get('lastName')}`
   }),
   age: DS.attr('number'),
-  image: DS.attr('string')
+  image: DS.attr('string'),
+  blogs: DS.hasMany('blog')
 })

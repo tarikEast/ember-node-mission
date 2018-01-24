@@ -1,3 +1,5 @@
-import { Model } from 'ember-cli-mirage';
+import { Model, hasMany } from 'ember-cli-mirage';
 
-export default Model;
+export default Model.extend({
+  blogs: hasMany('blog')
+});

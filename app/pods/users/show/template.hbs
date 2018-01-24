@@ -1,0 +1,9 @@
+<h3>{{model.name}}'s details</h3>
+<div>
+  <button {{action (route-action "deleteUser" model)}}>Delete {{model.firstName}}</button>
+</div>
+
+<div>
+  <label>Age:</label> {{model.age}}
+</div>
+

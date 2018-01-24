@@ -9,7 +9,7 @@ export default Factory.extend({
     return faker.name.lastName();
   },
   age() {
-    return faker.random.number(18, 65);
+    return faker.random.number({ min: 18, max: 65});
   },
   image() {
     return faker.image.avatar();

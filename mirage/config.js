@@ -27,4 +27,7 @@ export default function() {
   this.namespace = 'api';
 
   this.get('/users');
+  this.get('/users/:id');
+  this.del('/users/:id');
+  this.get('/blogs/:id');
 }
