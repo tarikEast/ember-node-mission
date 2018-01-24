@@ -1,7 +1,12 @@
 # ember-node-mission
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This repo is the way to onboard new devs on node. It's a generic template setup to work with mirage behaving as backend. This should be taken into consideration after candidate passes [Ember guide](https://guides.emberjs.com/)
+
+## Coding sesions and assignments
+
+* Session 1: ember-data and mirage part 1 - Setting up simple model and getting back list of mocked models
+* Session 2: ember-data and mirage part 1 - Model relations and explaining one of CRUD operations that is not "Read" operation
+* Assignment 1: Make models for given topic with relations and all CRUD operations using ember-data and mirage (as simple as possible, but to show ember-data usage and mirage usage)
 
 ## Prerequisites
 
