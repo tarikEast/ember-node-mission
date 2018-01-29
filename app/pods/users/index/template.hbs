@@ -1,0 +1,3 @@
+{{#each model as |user|}}
+  {{user-card user click=(action "goToUser" user.id)}}
+{{/each}}

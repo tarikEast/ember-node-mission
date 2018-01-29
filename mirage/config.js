@@ -23,4 +23,22 @@ export default function() {
 
     http://www.ember-cli-mirage.com/docs/v0.3.x/shorthands/
   */
+
+  this.namespace = '/api';
+
+  this.get('/users');
+  this.get('/users/:id');
+  this.get('/blogs', function(db, request) {
+    let blogs = [];
+    if (Object.keys(request.queryParams).length === 0) {
+      blogs = db.blogs.all();
+    } else {
+      let authorId = request.queryParams['filter[author_id]'];
+
+      blogs = db.blogs.where({ authorId })
+    }
+
+    return blogs;
+  });
+  this.get('/blogs/:id');
 }

@@ -1,0 +1,9 @@
+{{user-card model.user}}
+
+<ul>
+  {{#each model.blogs as |blog|}}
+    {{#link-to "blogs.show" blog.id tagName="li"}}
+      {{blog.title}}
+    {{/link-to}}
+  {{/each}}
+</ul>

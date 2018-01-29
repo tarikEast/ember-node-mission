@@ -1,0 +1,7 @@
+{{#item-tools as |i|}}
+  {{i.avatar user.profilePic}}
+  {{#i.title user.name as |m|}}
+    {{m.meta user.jobTitle "job-title"}}
+    {{m.meta (concat "# of blogs: " user.blogsCount)}}
+  {{/i.title}}
+{{/item-tools}}
