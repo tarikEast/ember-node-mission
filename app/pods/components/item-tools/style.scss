@@ -8,7 +8,7 @@
     box-sizing: inherit;
   }
 
-  * + * {
+  > * + * {
     margin-left: 10px;
   }
 }
