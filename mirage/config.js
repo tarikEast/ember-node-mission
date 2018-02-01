@@ -23,4 +23,12 @@ export default function() {
 
     http://www.ember-cli-mirage.com/docs/v0.3.x/shorthands/
   */
+
+  this.namespace = 'api'
+
+  this.get('/users');
+  this.get('/users/:id');
+  this.get('/blogs');
+  this.post('/blogs');
+  this.get('/blogs/:id');
 }

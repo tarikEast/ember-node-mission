@@ -1,0 +1,22 @@
+&{
+  margin-top: 10px;
+}
+
+.text {
+  line-height: 16px;
+  font-size: 14px;
+  color: darken(gray, 6);
+  height: 32px;
+  overflow: hidden;
+  position: relative;
+
+  .show-more {
+    position: absolute;
+    color: lighten(blue, 12);
+    bottom: 0;
+    right: 0;
+    background: white;
+    padding-left: 5px;
+    text-decoration: underline;
+  }
+}

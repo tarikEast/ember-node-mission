@@ -1,0 +1,5 @@
+<h2>List of blogs</h2>
+<button {{action (route-action "goToAddBlog")}}>Add new blog</button>
+{{#each (sort-by "datePublished:desc" model) as |blog|}}
+  {{blog-card blog click=(route-action "goToBlog" blog.id)}}
+{{/each}}

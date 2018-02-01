@@ -1,0 +1,7 @@
+{{#item-tools as |i|}}
+  {{#i.title blog.title as |m|}}
+    {{m.meta (concat "By " blog.author.name)}}
+    {{m.meta (concat "Published " (moment-from-now blog.datePublished ))}}
+  {{/i.title}}
+{{/item-tools}}
+{{short-text blog.text}}

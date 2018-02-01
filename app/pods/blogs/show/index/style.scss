@@ -1,0 +1,19 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  color: darkgray;
+  font-size: 26px;
+
+  .author {
+    flex-grow: 0;
+    margin-left: 10px;
+  }
+}
+
+.article {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.2;
+  color: darken($color: darkgray, $amount: 25);
+}

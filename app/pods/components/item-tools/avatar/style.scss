@@ -24,6 +24,16 @@
   }
 }
 
+&.x-small {
+  height: 26px;
+  width: 26px;
+
+  img {
+    height: 26px;
+    width: 26px;
+  }
+}
+
 &.border-red {
   img {
     border-color: rgba(red, 0.6)
