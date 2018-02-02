@@ -1,5 +1,5 @@
 {{#do-form blog submit=(action 'addBlog') as |f|}}
   {{f.input-field 'title' label='Blog title'}}
   {{f.input-field 'text' controlType="textarea" label='Blog text'}}
-  <button>Add blog</button>
+  <button data-test-add-blog-button>Add blog</button>
 {{/do-form}}
