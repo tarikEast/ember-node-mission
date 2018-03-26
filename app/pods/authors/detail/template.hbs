@@ -1,0 +1,17 @@
+<h1>Author details</h1>
+
+<div>{{model.fullName}}</div>
+<br>
+<br>
+<span>Bio:</span>
+<div>{{model.bio}}</div>
+
+<br>
+<br>
+
+<span>Blogs:</span>
+<ul>
+    {{#each model.blogs as |blog|}}
+        <li>{{blog.title}}</li>
+    {{/each}}
+</ul>

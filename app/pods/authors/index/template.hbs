@@ -1,0 +1,5 @@
+<h1>Authors</h1>
+{{#each model as |author|}}
+    {{author-card   author=author
+                    onDelete=(action "delete" author)}}
+{{/each}}

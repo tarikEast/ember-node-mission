@@ -1,0 +1,7 @@
+{{#item-tools as |i|}}
+    {{i.avatarSmall author.image}}
+    {{i.title author.fullName}}
+    <div class="buttons">
+        <button {{action onDelete}}>Delete</button>
+    </div>
+{{/item-tools}}
